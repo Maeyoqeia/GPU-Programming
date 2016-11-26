@@ -1,0 +1,1 @@
+/usr/bin/c++   -g -W -Wall -Wno-unused-parameter -std=c++11 -pthread    CMakeFiles/norm.dir/home/viola/DATA/uni/semester7/GPU/tut2/tut2/src/norm.cpp.o  -o norm -rdynamic 
