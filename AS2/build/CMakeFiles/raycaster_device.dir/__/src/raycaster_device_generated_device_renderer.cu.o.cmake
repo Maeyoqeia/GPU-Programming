@@ -70,7 +70,7 @@ set(generated_file_internal "/home/viola/DATA/uni/semester7/GPU/AS2/build/CMakeF
 set(generated_cubin_file_internal "/home/viola/DATA/uni/semester7/GPU/AS2/build/CMakeFiles/raycaster_device.dir/__/src/./raycaster_device_generated_device_renderer.cu.o.cubin.txt") # path
 
 set(CUDA_NVCC_EXECUTABLE "/usr/local/cuda/bin/nvcc") # path
-set(CUDA_NVCC_FLAGS -Wno-deprecated-gpu-targets --expt-relaxed-constexpr --resource-usage -arch=sm_30 ;; ) # list
+set(CUDA_NVCC_FLAGS -Wno-deprecated-gpu-targets --expt-relaxed-constexpr --resource-usage -arch=sm_30 -std=c++11 ;; ) # list
 # Build specific configuration flags
 set(CUDA_NVCC_FLAGS_DEBUG  ; )
 set(CUDA_NVCC_FLAGS_MINSIZEREL  ; )
@@ -86,7 +86,7 @@ endif()
 
 # This is the list of host compilation flags.  It C or CXX should already have
 # been chosen by FindCUDA.cmake.
-set(CMAKE_HOST_FLAGS -g -W -Wall -std=c++11 )
+set(CMAKE_HOST_FLAGS -g -W -Wall -std=c++11  )
 set(CMAKE_HOST_FLAGS_DEBUG -g)
 set(CMAKE_HOST_FLAGS_MINSIZEREL -Os -DNDEBUG)
 set(CMAKE_HOST_FLAGS_RELEASE -O3 -DNDEBUG -O2)

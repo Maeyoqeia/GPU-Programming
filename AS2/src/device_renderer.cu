@@ -1,3 +1,4 @@
+
 /// @file
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ///
@@ -36,7 +37,7 @@
 #include <chrono>
 #include <algorithm>
 
-
+//wozu device handle?
 namespace {
 
 
@@ -47,7 +48,7 @@ namespace {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 __global__
 void
-render( ) {
+render() {
 
 }
 
@@ -57,6 +58,15 @@ render( ) {
 bool
 initDevice() {
 
+    int deviceCount = 0;
+      checkErrorsCuda( cudaGetDeviceCount(&deviceCount));
+
+      if( 0 == deviceCount) {
+        return false;
+      }
+
+      checkErrorsCuda( cudaSetDevice());
+
   return true;
 }
 
@@ -64,8 +74,19 @@ initDevice() {
 //! Initialize memory
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 bool
-initDeviceMemory( const Scene& /*scene*/, const Image& /*image*/) {
 
+initDeviceMemory( const Scene& scene, const Image& image) {
+
+
+    // allocate device memory
+    checkErrorsCuda( cudaMalloc((void **) &scene.geometry, sizeof(int) * scene.geometry.size()));
+  checkErrorsCuda( cudaMalloc((void **) &scene.lights, sizeof(int) * scene.lights.size()));
+  checkErrorsCuda( cudaMalloc((void **) &image.data, sizeof(int) * scene.data.size()));
+
+    // copy device memory
+    checkErrorsCuda( cudaMemcpy( scene.geometry, scene.geometry[0], sizeof(int) * scene.geometry.size(), cudaMemcpyHostToDevice));
+     checkErrorsCuda( cudaMemcpy( scene.lights, scene.lights[0], sizeof(int) * scene.lights.size(), cudaMemcpyHostToDevice));
+      checkErrorsCuda( cudaMemcpy( image.data, image.data[0], sizeof(int) * image.data.size(), cudaMemcpyHostToDevice));
   return true;
 }
 
@@ -73,7 +94,7 @@ initDeviceMemory( const Scene& /*scene*/, const Image& /*image*/) {
 //! Initialize device
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 bool
-runDevice( const unsigned int /*n_rows*/, const unsigned int /*n_cols*/) {
+runDevice( const unsigned int n_rows, const unsigned int n_cols) {
 
   return true;
 }
@@ -82,8 +103,9 @@ runDevice( const unsigned int /*n_rows*/, const unsigned int /*n_cols*/) {
 //! Get image from device
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 bool
-getImageDevice( Image& /*image*/) {
+getImageDevice( Image& image) {
 
+  checkErrorsCuda(cudaMemcpy( &image[0], image, sizeof(int) * image.size(), cudaMemcpyDeviceToHost));
   return true;
 }
 
@@ -92,5 +114,7 @@ getImageDevice( Image& /*image*/) {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 void
 cleanupDevice() {
-
+     checkErrorsCuda( cudaFree());
 }
+
+

@@ -43,7 +43,7 @@ void
 ParallelRenderer::init( Camera* cam_cur, Scene* scene_cur) {
 
   // TODO: determine available hardware capabilities
-    unsigned num_threads = std::thread::hardware_concurrency();
+    this->num_threads = std::thread::hardware_concurrency();
 
   std::cout << "ParallelRenderer::init() : Using " << num_threads << " threads." << std::endl;
 
@@ -105,8 +105,8 @@ ParallelRenderer::render() {
     int lg = std::log2(num_threads);
     int x_pow = lg/2;
     int y_pow = lg-x_pow;
-    num_tiles[0] = pow(2,x_pow);
-    num_tiles[1] = pow(2,y_pow);
+    num_tiles[0] = pow(2,static_cast<float>(x_pow));
+    num_tiles[1] = pow(2,static_cast<float>(y_pow));
 
   std::cerr << "ParallelRenderer::render() : running with "
             << num_tiles[0] << " x " << num_tiles[1] << "." << std::endl;
@@ -117,7 +117,7 @@ ParallelRenderer::render() {
   // TODO: spawn threads
   const ivec2 numthreads(num_tiles[0],num_tiles[1]);
   std::vector< std::thread > threads;
-      for( unsigned int i = 0; i < num_tiles[0]; ++i) {
+      for( int i = 0; i < num_tiles[0]; ++i) {
           for (int j = 0; j < num_tiles[1]; ++j) {
               const ivec2 tid(i,j);
 
@@ -126,7 +126,7 @@ ParallelRenderer::render() {
 
       }
 
-      for( unsigned int i = 0; i < num_tiles[0]*num_tiles[1]; ++i) {
+      for( int i = 0; i < num_tiles[0]*num_tiles[1]; ++i) {
         threads[i].join();
       }
 

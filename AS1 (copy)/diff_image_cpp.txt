@@ -1,0 +1,8 @@
+23,24d22
+< #include <algorithm>
+< #include <string>
+102,103c100
+<       // clamp if necessary
+<       file << std::min( 255, static_cast<int>( std::round( data[i_row * n_cols + i_col]))) << " ";
+---
+>       file << static_cast<int>( std::round( data[i_row * n_cols + i_col])) << " ";
