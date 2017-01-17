@@ -21,6 +21,7 @@
 // inclused, project
 #include "renderer.h"
 #include "parallel_renderer.h"
+#include "device_renderer.h"
 #include "scene.h"
 #include "perspective_camera.h"
 
@@ -34,7 +35,7 @@ main( int /*argc*/, char** /**argv*/) {
   scene->init();
 
   // create renderer
-  Renderer renderer;
+  DeviceRenderer renderer;
   renderer.init( cam, scene);
    //ParallelRenderer renderer;
    //renderer.init( cam, scene, 4);

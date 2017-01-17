@@ -6,6 +6,7 @@ CMakeFiles/raycaster.dir/src/image.cpp.o
  build/../include/image.h
 CMakeFiles/raycaster.dir/src/intersection.cpp.o
  /home/viola/DATA/uni/semester7/GPU/AS1/ex1/src/intersection.cpp
+ /usr/local/cuda/include/cuda.h
  build/../include/glm/common.hpp
  build/../include/glm/detail/_fixes.hpp
  build/../include/glm/detail/_swizzle.hpp
@@ -105,7 +106,9 @@ CMakeFiles/raycaster.dir/src/intersection.cpp.o
  build/../include/util.h
 CMakeFiles/raycaster.dir/src/main.cpp.o
  /home/viola/DATA/uni/semester7/GPU/AS1/ex1/src/main.cpp
+ /usr/local/cuda/include/cuda.h
  build/../include/camera.h
+ build/../include/device_renderer.h
  build/../include/glm/common.hpp
  build/../include/glm/detail/_fixes.hpp
  build/../include/glm/detail/_swizzle.hpp
@@ -209,6 +212,7 @@ CMakeFiles/raycaster.dir/src/main.cpp.o
  build/../include/scene.h
 CMakeFiles/raycaster.dir/src/parallel_renderer.cpp.o
  /home/viola/DATA/uni/semester7/GPU/AS1/ex1/src/parallel_renderer.cpp
+ /usr/local/cuda/include/cuda.h
  build/../include/camera.h
  build/../include/glm/common.hpp
  build/../include/glm/detail/_fixes.hpp
@@ -312,6 +316,7 @@ CMakeFiles/raycaster.dir/src/parallel_renderer.cpp.o
  build/../include/scene.h
 CMakeFiles/raycaster.dir/src/perspective_camera.cpp.o
  /home/viola/DATA/uni/semester7/GPU/AS1/ex1/src/perspective_camera.cpp
+ /usr/local/cuda/include/cuda.h
  build/../include/camera.h
  build/../include/glm/common.hpp
  build/../include/glm/detail/_fixes.hpp
@@ -411,6 +416,7 @@ CMakeFiles/raycaster.dir/src/perspective_camera.cpp.o
  build/../include/util.h
 CMakeFiles/raycaster.dir/src/phong.cpp.o
  /home/viola/DATA/uni/semester7/GPU/AS1/ex1/src/phong.cpp
+ /usr/local/cuda/include/cuda.h
  build/../include/glm/common.hpp
  build/../include/glm/detail/_fixes.hpp
  build/../include/glm/detail/_swizzle.hpp
@@ -509,6 +515,7 @@ CMakeFiles/raycaster.dir/src/phong.cpp.o
  build/../include/util.h
 CMakeFiles/raycaster.dir/src/plane.cpp.o
  /home/viola/DATA/uni/semester7/GPU/AS1/ex1/src/plane.cpp
+ /usr/local/cuda/include/cuda.h
  build/../include/geometry.h
  build/../include/glm/common.hpp
  build/../include/glm/detail/_fixes.hpp
@@ -610,6 +617,7 @@ CMakeFiles/raycaster.dir/src/plane.cpp.o
  build/../include/util.h
 CMakeFiles/raycaster.dir/src/renderer.cpp.o
  /home/viola/DATA/uni/semester7/GPU/AS1/ex1/src/renderer.cpp
+ /usr/local/cuda/include/cuda.h
  build/../include/camera.h
  build/../include/glm/common.hpp
  build/../include/glm/detail/_fixes.hpp
@@ -712,6 +720,7 @@ CMakeFiles/raycaster.dir/src/renderer.cpp.o
  build/../include/scene.h
 CMakeFiles/raycaster.dir/src/scene.cpp.o
  /home/viola/DATA/uni/semester7/GPU/AS1/ex1/src/scene.cpp
+ /usr/local/cuda/include/cuda.h
  build/../include/geometry.h
  build/../include/glm/common.hpp
  build/../include/glm/detail/_fixes.hpp
@@ -815,6 +824,7 @@ CMakeFiles/raycaster.dir/src/scene.cpp.o
  build/../include/sphere.h
 CMakeFiles/raycaster.dir/src/sphere.cpp.o
  /home/viola/DATA/uni/semester7/GPU/AS1/ex1/src/sphere.cpp
+ /usr/local/cuda/include/cuda.h
  build/../include/geometry.h
  build/../include/glm/common.hpp
  build/../include/glm/detail/_fixes.hpp

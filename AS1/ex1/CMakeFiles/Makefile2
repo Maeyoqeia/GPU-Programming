@@ -91,6 +91,41 @@ clean: CMakeFiles/raycaster.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/raycaster_device.dir
+
+# All Build rule for target.
+CMakeFiles/raycaster_device.dir/all:
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/depend
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viola/DATA/uni/semester7/GPU/AS1/ex1/CMakeFiles  11 12 13 14 15 16 17 18 19 20 21 22
+	@echo "Built target raycaster_device"
+.PHONY : CMakeFiles/raycaster_device.dir/all
+
+# Include target in all.
+all: CMakeFiles/raycaster_device.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/raycaster_device.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viola/DATA/uni/semester7/GPU/AS1/ex1/CMakeFiles 12
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/raycaster_device.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viola/DATA/uni/semester7/GPU/AS1/ex1/CMakeFiles 0
+.PHONY : CMakeFiles/raycaster_device.dir/rule
+
+# Convenience name for target.
+raycaster_device: CMakeFiles/raycaster_device.dir/rule
+.PHONY : raycaster_device
+
+# clean rule for target.
+CMakeFiles/raycaster_device.dir/clean:
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/clean
+.PHONY : CMakeFiles/raycaster_device.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/raycaster_device.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

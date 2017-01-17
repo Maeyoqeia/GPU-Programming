@@ -1,0 +1,1 @@
+/usr/bin/c++   -g -W -Wall -std=c++11  -g    CMakeFiles/wavelet_transform.dir/src/main.cpp.o  -o wavelet_transform -rdynamic 

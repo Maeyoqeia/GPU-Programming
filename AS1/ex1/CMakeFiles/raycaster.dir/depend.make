@@ -5,6 +5,7 @@ CMakeFiles/raycaster.dir/src/image.cpp.o: src/image.cpp
 CMakeFiles/raycaster.dir/src/image.cpp.o: build/../include/image.h
 
 CMakeFiles/raycaster.dir/src/intersection.cpp.o: src/intersection.cpp
+CMakeFiles/raycaster.dir/src/intersection.cpp.o: /usr/local/cuda/include/cuda.h
 CMakeFiles/raycaster.dir/src/intersection.cpp.o: build/../include/glm/common.hpp
 CMakeFiles/raycaster.dir/src/intersection.cpp.o: build/../include/glm/detail/_fixes.hpp
 CMakeFiles/raycaster.dir/src/intersection.cpp.o: build/../include/glm/detail/_swizzle.hpp
@@ -104,7 +105,9 @@ CMakeFiles/raycaster.dir/src/intersection.cpp.o: build/../include/ray.h
 CMakeFiles/raycaster.dir/src/intersection.cpp.o: build/../include/util.h
 
 CMakeFiles/raycaster.dir/src/main.cpp.o: src/main.cpp
+CMakeFiles/raycaster.dir/src/main.cpp.o: /usr/local/cuda/include/cuda.h
 CMakeFiles/raycaster.dir/src/main.cpp.o: build/../include/camera.h
+CMakeFiles/raycaster.dir/src/main.cpp.o: build/../include/device_renderer.h
 CMakeFiles/raycaster.dir/src/main.cpp.o: build/../include/glm/common.hpp
 CMakeFiles/raycaster.dir/src/main.cpp.o: build/../include/glm/detail/_fixes.hpp
 CMakeFiles/raycaster.dir/src/main.cpp.o: build/../include/glm/detail/_swizzle.hpp
@@ -208,6 +211,7 @@ CMakeFiles/raycaster.dir/src/main.cpp.o: build/../include/renderer.h
 CMakeFiles/raycaster.dir/src/main.cpp.o: build/../include/scene.h
 
 CMakeFiles/raycaster.dir/src/parallel_renderer.cpp.o: src/parallel_renderer.cpp
+CMakeFiles/raycaster.dir/src/parallel_renderer.cpp.o: /usr/local/cuda/include/cuda.h
 CMakeFiles/raycaster.dir/src/parallel_renderer.cpp.o: build/../include/camera.h
 CMakeFiles/raycaster.dir/src/parallel_renderer.cpp.o: build/../include/glm/common.hpp
 CMakeFiles/raycaster.dir/src/parallel_renderer.cpp.o: build/../include/glm/detail/_fixes.hpp
@@ -311,6 +315,7 @@ CMakeFiles/raycaster.dir/src/parallel_renderer.cpp.o: build/../include/renderer.
 CMakeFiles/raycaster.dir/src/parallel_renderer.cpp.o: build/../include/scene.h
 
 CMakeFiles/raycaster.dir/src/perspective_camera.cpp.o: src/perspective_camera.cpp
+CMakeFiles/raycaster.dir/src/perspective_camera.cpp.o: /usr/local/cuda/include/cuda.h
 CMakeFiles/raycaster.dir/src/perspective_camera.cpp.o: build/../include/camera.h
 CMakeFiles/raycaster.dir/src/perspective_camera.cpp.o: build/../include/glm/common.hpp
 CMakeFiles/raycaster.dir/src/perspective_camera.cpp.o: build/../include/glm/detail/_fixes.hpp
@@ -410,6 +415,7 @@ CMakeFiles/raycaster.dir/src/perspective_camera.cpp.o: build/../include/ray.h
 CMakeFiles/raycaster.dir/src/perspective_camera.cpp.o: build/../include/util.h
 
 CMakeFiles/raycaster.dir/src/phong.cpp.o: src/phong.cpp
+CMakeFiles/raycaster.dir/src/phong.cpp.o: /usr/local/cuda/include/cuda.h
 CMakeFiles/raycaster.dir/src/phong.cpp.o: build/../include/glm/common.hpp
 CMakeFiles/raycaster.dir/src/phong.cpp.o: build/../include/glm/detail/_fixes.hpp
 CMakeFiles/raycaster.dir/src/phong.cpp.o: build/../include/glm/detail/_swizzle.hpp
@@ -508,6 +514,7 @@ CMakeFiles/raycaster.dir/src/phong.cpp.o: build/../include/ray.h
 CMakeFiles/raycaster.dir/src/phong.cpp.o: build/../include/util.h
 
 CMakeFiles/raycaster.dir/src/plane.cpp.o: src/plane.cpp
+CMakeFiles/raycaster.dir/src/plane.cpp.o: /usr/local/cuda/include/cuda.h
 CMakeFiles/raycaster.dir/src/plane.cpp.o: build/../include/geometry.h
 CMakeFiles/raycaster.dir/src/plane.cpp.o: build/../include/glm/common.hpp
 CMakeFiles/raycaster.dir/src/plane.cpp.o: build/../include/glm/detail/_fixes.hpp
@@ -609,6 +616,7 @@ CMakeFiles/raycaster.dir/src/plane.cpp.o: build/../include/ray.h
 CMakeFiles/raycaster.dir/src/plane.cpp.o: build/../include/util.h
 
 CMakeFiles/raycaster.dir/src/renderer.cpp.o: src/renderer.cpp
+CMakeFiles/raycaster.dir/src/renderer.cpp.o: /usr/local/cuda/include/cuda.h
 CMakeFiles/raycaster.dir/src/renderer.cpp.o: build/../include/camera.h
 CMakeFiles/raycaster.dir/src/renderer.cpp.o: build/../include/glm/common.hpp
 CMakeFiles/raycaster.dir/src/renderer.cpp.o: build/../include/glm/detail/_fixes.hpp
@@ -711,6 +719,7 @@ CMakeFiles/raycaster.dir/src/renderer.cpp.o: build/../include/renderer.h
 CMakeFiles/raycaster.dir/src/renderer.cpp.o: build/../include/scene.h
 
 CMakeFiles/raycaster.dir/src/scene.cpp.o: src/scene.cpp
+CMakeFiles/raycaster.dir/src/scene.cpp.o: /usr/local/cuda/include/cuda.h
 CMakeFiles/raycaster.dir/src/scene.cpp.o: build/../include/geometry.h
 CMakeFiles/raycaster.dir/src/scene.cpp.o: build/../include/glm/common.hpp
 CMakeFiles/raycaster.dir/src/scene.cpp.o: build/../include/glm/detail/_fixes.hpp
@@ -814,6 +823,7 @@ CMakeFiles/raycaster.dir/src/scene.cpp.o: build/../include/scene.h
 CMakeFiles/raycaster.dir/src/scene.cpp.o: build/../include/sphere.h
 
 CMakeFiles/raycaster.dir/src/sphere.cpp.o: src/sphere.cpp
+CMakeFiles/raycaster.dir/src/sphere.cpp.o: /usr/local/cuda/include/cuda.h
 CMakeFiles/raycaster.dir/src/sphere.cpp.o: build/../include/geometry.h
 CMakeFiles/raycaster.dir/src/sphere.cpp.o: build/../include/glm/common.hpp
 CMakeFiles/raycaster.dir/src/sphere.cpp.o: build/../include/glm/detail/_fixes.hpp

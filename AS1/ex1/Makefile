@@ -114,12 +114,50 @@ raycaster/fast:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/build
 .PHONY : raycaster/fast
 
+#=============================================================================
+# Target rules for targets named raycaster_device
+
+# Build rule for target.
+raycaster_device: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 raycaster_device
+.PHONY : raycaster_device
+
+# fast build rule for target.
+raycaster_device/fast:
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/build
+.PHONY : raycaster_device/fast
+
+src/device_renderer.o: src/device_renderer.cpp.o
+.PHONY : src/device_renderer.o
+
+# target to build an object file
+src/device_renderer.cpp.o:
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/device_renderer.cpp.o
+.PHONY : src/device_renderer.cpp.o
+
+src/device_renderer.i: src/device_renderer.cpp.i
+.PHONY : src/device_renderer.i
+
+# target to preprocess a source file
+src/device_renderer.cpp.i:
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/device_renderer.cpp.i
+.PHONY : src/device_renderer.cpp.i
+
+src/device_renderer.s: src/device_renderer.cpp.s
+.PHONY : src/device_renderer.s
+
+# target to generate assembly for a file
+src/device_renderer.cpp.s:
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/device_renderer.cpp.s
+.PHONY : src/device_renderer.cpp.s
+
 src/image.o: src/image.cpp.o
 .PHONY : src/image.o
 
 # target to build an object file
 src/image.cpp.o:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/image.cpp.o
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/image.cpp.o
 .PHONY : src/image.cpp.o
 
 src/image.i: src/image.cpp.i
@@ -128,6 +166,7 @@ src/image.i: src/image.cpp.i
 # target to preprocess a source file
 src/image.cpp.i:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/image.cpp.i
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/image.cpp.i
 .PHONY : src/image.cpp.i
 
 src/image.s: src/image.cpp.s
@@ -136,6 +175,7 @@ src/image.s: src/image.cpp.s
 # target to generate assembly for a file
 src/image.cpp.s:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/image.cpp.s
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/image.cpp.s
 .PHONY : src/image.cpp.s
 
 src/intersection.o: src/intersection.cpp.o
@@ -144,6 +184,7 @@ src/intersection.o: src/intersection.cpp.o
 # target to build an object file
 src/intersection.cpp.o:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/intersection.cpp.o
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/intersection.cpp.o
 .PHONY : src/intersection.cpp.o
 
 src/intersection.i: src/intersection.cpp.i
@@ -152,6 +193,7 @@ src/intersection.i: src/intersection.cpp.i
 # target to preprocess a source file
 src/intersection.cpp.i:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/intersection.cpp.i
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/intersection.cpp.i
 .PHONY : src/intersection.cpp.i
 
 src/intersection.s: src/intersection.cpp.s
@@ -160,6 +202,7 @@ src/intersection.s: src/intersection.cpp.s
 # target to generate assembly for a file
 src/intersection.cpp.s:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/intersection.cpp.s
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/intersection.cpp.s
 .PHONY : src/intersection.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -168,6 +211,7 @@ src/main.o: src/main.cpp.o
 # target to build an object file
 src/main.cpp.o:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -176,6 +220,7 @@ src/main.i: src/main.cpp.i
 # target to preprocess a source file
 src/main.cpp.i:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -184,6 +229,7 @@ src/main.s: src/main.cpp.s
 # target to generate assembly for a file
 src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/parallel_renderer.o: src/parallel_renderer.cpp.o
@@ -192,6 +238,7 @@ src/parallel_renderer.o: src/parallel_renderer.cpp.o
 # target to build an object file
 src/parallel_renderer.cpp.o:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/parallel_renderer.cpp.o
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/parallel_renderer.cpp.o
 .PHONY : src/parallel_renderer.cpp.o
 
 src/parallel_renderer.i: src/parallel_renderer.cpp.i
@@ -200,6 +247,7 @@ src/parallel_renderer.i: src/parallel_renderer.cpp.i
 # target to preprocess a source file
 src/parallel_renderer.cpp.i:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/parallel_renderer.cpp.i
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/parallel_renderer.cpp.i
 .PHONY : src/parallel_renderer.cpp.i
 
 src/parallel_renderer.s: src/parallel_renderer.cpp.s
@@ -208,6 +256,7 @@ src/parallel_renderer.s: src/parallel_renderer.cpp.s
 # target to generate assembly for a file
 src/parallel_renderer.cpp.s:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/parallel_renderer.cpp.s
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/parallel_renderer.cpp.s
 .PHONY : src/parallel_renderer.cpp.s
 
 src/perspective_camera.o: src/perspective_camera.cpp.o
@@ -216,6 +265,7 @@ src/perspective_camera.o: src/perspective_camera.cpp.o
 # target to build an object file
 src/perspective_camera.cpp.o:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/perspective_camera.cpp.o
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/perspective_camera.cpp.o
 .PHONY : src/perspective_camera.cpp.o
 
 src/perspective_camera.i: src/perspective_camera.cpp.i
@@ -224,6 +274,7 @@ src/perspective_camera.i: src/perspective_camera.cpp.i
 # target to preprocess a source file
 src/perspective_camera.cpp.i:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/perspective_camera.cpp.i
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/perspective_camera.cpp.i
 .PHONY : src/perspective_camera.cpp.i
 
 src/perspective_camera.s: src/perspective_camera.cpp.s
@@ -232,6 +283,7 @@ src/perspective_camera.s: src/perspective_camera.cpp.s
 # target to generate assembly for a file
 src/perspective_camera.cpp.s:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/perspective_camera.cpp.s
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/perspective_camera.cpp.s
 .PHONY : src/perspective_camera.cpp.s
 
 src/phong.o: src/phong.cpp.o
@@ -240,6 +292,7 @@ src/phong.o: src/phong.cpp.o
 # target to build an object file
 src/phong.cpp.o:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/phong.cpp.o
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/phong.cpp.o
 .PHONY : src/phong.cpp.o
 
 src/phong.i: src/phong.cpp.i
@@ -248,6 +301,7 @@ src/phong.i: src/phong.cpp.i
 # target to preprocess a source file
 src/phong.cpp.i:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/phong.cpp.i
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/phong.cpp.i
 .PHONY : src/phong.cpp.i
 
 src/phong.s: src/phong.cpp.s
@@ -256,6 +310,7 @@ src/phong.s: src/phong.cpp.s
 # target to generate assembly for a file
 src/phong.cpp.s:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/phong.cpp.s
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/phong.cpp.s
 .PHONY : src/phong.cpp.s
 
 src/plane.o: src/plane.cpp.o
@@ -264,6 +319,7 @@ src/plane.o: src/plane.cpp.o
 # target to build an object file
 src/plane.cpp.o:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/plane.cpp.o
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/plane.cpp.o
 .PHONY : src/plane.cpp.o
 
 src/plane.i: src/plane.cpp.i
@@ -272,6 +328,7 @@ src/plane.i: src/plane.cpp.i
 # target to preprocess a source file
 src/plane.cpp.i:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/plane.cpp.i
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/plane.cpp.i
 .PHONY : src/plane.cpp.i
 
 src/plane.s: src/plane.cpp.s
@@ -280,6 +337,7 @@ src/plane.s: src/plane.cpp.s
 # target to generate assembly for a file
 src/plane.cpp.s:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/plane.cpp.s
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/plane.cpp.s
 .PHONY : src/plane.cpp.s
 
 src/renderer.o: src/renderer.cpp.o
@@ -288,6 +346,7 @@ src/renderer.o: src/renderer.cpp.o
 # target to build an object file
 src/renderer.cpp.o:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/renderer.cpp.o
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/renderer.cpp.o
 .PHONY : src/renderer.cpp.o
 
 src/renderer.i: src/renderer.cpp.i
@@ -296,6 +355,7 @@ src/renderer.i: src/renderer.cpp.i
 # target to preprocess a source file
 src/renderer.cpp.i:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/renderer.cpp.i
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/renderer.cpp.i
 .PHONY : src/renderer.cpp.i
 
 src/renderer.s: src/renderer.cpp.s
@@ -304,6 +364,7 @@ src/renderer.s: src/renderer.cpp.s
 # target to generate assembly for a file
 src/renderer.cpp.s:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/renderer.cpp.s
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/renderer.cpp.s
 .PHONY : src/renderer.cpp.s
 
 src/scene.o: src/scene.cpp.o
@@ -312,6 +373,7 @@ src/scene.o: src/scene.cpp.o
 # target to build an object file
 src/scene.cpp.o:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/scene.cpp.o
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/scene.cpp.o
 .PHONY : src/scene.cpp.o
 
 src/scene.i: src/scene.cpp.i
@@ -320,6 +382,7 @@ src/scene.i: src/scene.cpp.i
 # target to preprocess a source file
 src/scene.cpp.i:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/scene.cpp.i
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/scene.cpp.i
 .PHONY : src/scene.cpp.i
 
 src/scene.s: src/scene.cpp.s
@@ -328,6 +391,7 @@ src/scene.s: src/scene.cpp.s
 # target to generate assembly for a file
 src/scene.cpp.s:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/scene.cpp.s
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/scene.cpp.s
 .PHONY : src/scene.cpp.s
 
 src/sphere.o: src/sphere.cpp.o
@@ -336,6 +400,7 @@ src/sphere.o: src/sphere.cpp.o
 # target to build an object file
 src/sphere.cpp.o:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/sphere.cpp.o
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/sphere.cpp.o
 .PHONY : src/sphere.cpp.o
 
 src/sphere.i: src/sphere.cpp.i
@@ -344,6 +409,7 @@ src/sphere.i: src/sphere.cpp.i
 # target to preprocess a source file
 src/sphere.cpp.i:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/sphere.cpp.i
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/sphere.cpp.i
 .PHONY : src/sphere.cpp.i
 
 src/sphere.s: src/sphere.cpp.s
@@ -352,6 +418,7 @@ src/sphere.s: src/sphere.cpp.s
 # target to generate assembly for a file
 src/sphere.cpp.s:
 	$(MAKE) -f CMakeFiles/raycaster.dir/build.make CMakeFiles/raycaster.dir/src/sphere.cpp.s
+	$(MAKE) -f CMakeFiles/raycaster_device.dir/build.make CMakeFiles/raycaster_device.dir/src/sphere.cpp.s
 .PHONY : src/sphere.cpp.s
 
 # Help Target
@@ -362,7 +429,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... raycaster"
+	@echo "... raycaster_device"
 	@echo "... rebuild_cache"
+	@echo "... src/device_renderer.o"
+	@echo "... src/device_renderer.i"
+	@echo "... src/device_renderer.s"
 	@echo "... src/image.o"
 	@echo "... src/image.i"
 	@echo "... src/image.s"

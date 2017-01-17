@@ -21,6 +21,7 @@
 // includes, system
 #include <vector>
 #include <iostream>
+#include <string>
 
 // Simple Image description
 class Image {

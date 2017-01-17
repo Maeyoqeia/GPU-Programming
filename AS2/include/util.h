@@ -22,18 +22,27 @@
 namespace Util {
 
 template <class Vec3 >
+#ifdef __CUDACC__
+__host__ __device__
+#endif
 float
 norm2( const Vec3& vec) {
   return vec.x*vec.x + vec.y*vec.y + vec.z*vec.z;
 }
 
 template <class Vec3 >
+#ifdef __CUDACC__
+__host__ __device__
+#endif
 float
 norm( const Vec3& vec) {
   return std::sqrt( norm2(vec));
 }
 
 template <class Vec3 >
+#ifdef __CUDACC__
+__host__ __device__
+#endif
 float
 dot( const Vec3& vec1, const Vec3& vec2) {
   return vec1.x*vec2.x + vec1.y*vec2.y + vec1.z*vec2.z;

@@ -43,12 +43,13 @@ public:
 
   bool intersect( Ray& ray, Intersection& intersec) const;
 
-private:
-
   vec3 n;
   vec3 t1;
   vec3 t2;
   vec2 size;
+
+private:
+
 
 };
 

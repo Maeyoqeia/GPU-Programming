@@ -17,12 +17,28 @@ scene.h
 /home/viola/DATA/uni/semester7/GPU/AS1/ex1/src/scene.h
 perspective_camera.h
 /home/viola/DATA/uni/semester7/GPU/AS1/ex1/src/perspective_camera.h
+device_renderer.h
+/home/viola/DATA/uni/semester7/GPU/AS1/ex1/src/device_renderer.h
+
+/usr/local/cuda/include/cuda.h
+stdlib.h
+-
+stdint.h
+-
 
 build/../include/camera.h
 image.h
 build/../include/image.h
 ray.h
 build/../include/ray.h
+
+build/../include/device_renderer.h
+renderer.h
+build/../include/renderer.h
+scene.h
+build/../include/scene.h
+camera.h
+build/../include/camera.h
 
 build/../include/glm/common.hpp
 detail/func_common.hpp
